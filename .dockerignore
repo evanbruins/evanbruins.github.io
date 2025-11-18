@@ -1,3 +1,6 @@
-_site/
-.git/
-assets/
+_site
+.jekyll-cache
+vendor
+node_modules
+Gemfile.lock
+
