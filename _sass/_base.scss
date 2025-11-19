@@ -155,7 +155,36 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 }
 
-// Caption
+/* Featured Projects on Homepage */
+.featured-projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;      /* remove outer spacing */
+  padding: 0;     /* remove outer padding */
+  gap: 0;         /* remove gap between flex items */
+  margin-top: 1rem; /* add space above Featured Projects */
+}
+
+.featured-projects .col {
+  padding: 0;     /* remove Bootstrap column padding */
+  margin: 0;      /* remove any extra margin */
+  flex: 1 1 auto; /* allow auto scaling */
+}
+
+.featured-projects .card {
+  margin: 5px;     
+  border: 1px solid var(--global-divider-color);
+  box-sizing: border-box;
+}
+
+.featured-projects .card img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+//caption
 
 .caption {
   font-size: 0.875rem;
@@ -194,6 +223,7 @@ ul.task-list input[type="checkbox"] {
 
 .profile {
   width: 100%;
+  margin-top: -100px; /* move up 50px, adjust as needed */
 
   .more-info {
     margin-bottom: 5px;
@@ -314,7 +344,7 @@ ul.task-list input[type="checkbox"] {
       img {
         width: 1.7rem;
         height: 1.7rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.9rem;
         // margin: 0.5rem;
       }
 
@@ -407,13 +437,13 @@ ul.task-list input[type="checkbox"] {
       img {
         width: 3.2rem;
         height: 3.2rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
       }
 
       svg {
         width: 3.5rem;
         height: 4rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0rem;
 
         image {
           width: 3.5rem;
@@ -437,7 +467,7 @@ ul.task-list input[type="checkbox"] {
   }
 
   .contact-note {
-    font-size: 0.8rem;
+    font-size: 0rem;
   }
 }
 
@@ -478,8 +508,8 @@ footer.fixed-bottom {
 
   .container {
     color: var(--global-footer-text-color);
-    padding-top: 9px;
-    padding-bottom: 8px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     text-align: center;
   }
 
@@ -495,8 +525,8 @@ footer.fixed-bottom {
 
 footer.sticky-bottom {
   border-top: 1px solid var(--global-divider-color);
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-size: 0.9rem;
 
   .container {
@@ -1422,4 +1452,35 @@ figure.cover {
   a.cover-link:hover {
     color: #23212d !important;
   }
+}
+
+/* Header socials on about page: make icons smaller and nudge left */
+.post .post-header .social {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5rem; 
+}
+
+.post .post-header .social .contact-icons {
+  font-size: 1.8rem; /* slightly larger icons */
+}
+
+.post .post-header .social .contact-icons a {
+  margin: 0 0.25rem; /* tighter spacing between icons */
+}
+
+.post .post-header .social .contact-icons img {
+  width: 48px; /* for image-based socials (increased) */
+  height: auto;
+  vertical-align: middle;
+}
+
+/* Also ensure post-level socials are smaller (overrides default large footer social size) */
+.post .social .contact-icons {
+  font-size: 1.5rem !important;
+}
+
+.post .social .contact-icons img {
+  width: 48px !important;
+  height: auto;
 }

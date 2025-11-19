@@ -5,6 +5,7 @@ description: another without an image
 img:
 importance: 3
 category: fun
+date: 2025-11-21
 ---
 
 Every project has a beautiful feature showcase page.
