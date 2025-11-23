@@ -26,9 +26,24 @@ $(document).ready(function () {
     var navSelector = "#toc-sidebar";
     var $myNav = $(navSelector);
     Toc.init($myNav);
-    $("body").scrollspy({
-      target: navSelector,
-    });
+
+    // Initialize scrollspy using the navbar height as offset so the
+    // highlighted TOC item matches the section visible below the fixed navbar.
+    function initScrollSpy() {
+      var navOffset = $('#navbar').outerHeight() || 0;
+      try {
+        $('body').scrollspy('dispose');
+      } catch (e) {
+        // ignore if dispose isn't available
+      }
+      $('body').scrollspy({
+        target: navSelector,
+        offset: navOffset + 10,
+      });
+    }
+
+    initScrollSpy();
+    $(window).on('resize load', initScrollSpy);
   }
 
   // add css to jupyter notebooks

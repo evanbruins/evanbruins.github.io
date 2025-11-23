@@ -1173,7 +1173,10 @@ nav[data-toggle="toc"] {
 }
 
 #toc-sidebar {
-  z-index: 1;
+  z-index: 1032;
+  position: sticky;
+  /* leave space for the fixed navbar so the sidebar items aren't covered */
+  top: 70px;
 }
 
 .echarts {
