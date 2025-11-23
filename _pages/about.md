@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Mechanical Engineer Driven by Innovation and a Passion for the Outdoors
 overflow: hidden;
 
 profile:
@@ -34,12 +34,12 @@ latest_projects:
 body { padding-bottom: 0 !important; }
 </style>
 
-Wite your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder. 
+Hi, I’m Evan Bruins! I am a senior Mechanical Engineering student at George Fox University, focused on creating optimized designs and connecting technology with the natural world. Outside of engineering, I spend my time backpacking, snowboarding, surfing, running, and making music with friends.
 
   
 
-<div style="margin-top:3rem"></div>
-## Featured Projects
+<div style="margin-top:1rem"></div>
+## Featured Projects          
 
 <div class="featured-projects row row-cols-1 row-cols-md-3 g-4">
 {% assign sorted_projects = site.projects | sort: "importance" | reverse %}

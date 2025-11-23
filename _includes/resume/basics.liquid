@@ -1,7 +1,13 @@
+<style>
+  /* Hide resume avatar on small screens to avoid overlapping text */
+  @media (max-width: 700px) {
+    .resume-avatar { display: none !important; }
+  }
+</style>
 <table class="table table-cv table-sm table-borderless table-responsive table-cv-map" style="position:relative;">
   {% assign skip_basics = 'image,profiles,location' | split: ',' %}
   {%- if data[1].image and data[1].image != '' -%}
-    <img src="{{ data[1].image | prepend: 'assets/img/' | relative_url }}" alt="{{ data[1].name }}" class="rounded-circle" style="position:absolute; top:8px; right:8px; z-index:10; width:200px; height:200px; object-fit:cover; object-position:50% 1%;" />
+    <img src="{{ data[1].image | prepend: 'assets/img/' | relative_url }}" alt="{{ data[1].name }}" class="rounded-circle resume-avatar" style="position:absolute; top:8px; right:8px; z-index:10; width:200px; height:200px; object-fit:cover; object-position:50% 1%;" />
   {%- endif -%}
   {% for content in data[1] %}
     {%
