@@ -385,34 +385,34 @@ ninja.data = [{
           description: "George Fox 2022",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-bungee-jumper-multibody-dynamics-simulation",
+          title: 'Bungee Jumper Multibody Dynamics Simulation',
+          description: "George Fox 2024",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+            },},{id: "projects-electronic-gauges",
+          title: 'Electronic Gauges',
+          description: "George Fox 2022",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+            },},{id: "projects-brayton-cycle-engine-design",
+          title: 'Brayton Cycle Engine Design',
+          description: "George Fox 2023",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
+            },},{id: "projects-fea-of-a-3d-printed-afo",
+          title: 'FEA of a 3D printed AFO',
+          description: "George Fox 2024",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
+            },},{id: "projects-accurate-fea-of-fixed-beam-testing",
+          title: 'Accurate FEA of fixed Beam Testing',
+          description: "George Fox 2024",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
+            },},{id: "projects-rc-car-design",
+          title: 'RC Car Design',
+          description: "Formula Fox Club",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_project/";
             },},{id: "projects-project-8",
