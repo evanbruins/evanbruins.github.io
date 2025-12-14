@@ -1,81 +1,26 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
+title: Brayton Cycle Engine Design
+description: George Fox 2023
+img: assets/img/4.1.jpg
 importance: 3
-category: fun
-date: 2025-11-21
+category: school
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+{% include figure.liquid path="assets/img/4.2.jpg" title="Brayton study - chart 1" class="img-fluid rounded z-depth-1" %}
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+{% include figure.liquid path="assets/img/4.3.jpg" title="Brayton study - diagram 1" class="img-fluid rounded z-depth-1" %}
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+{% include figure.liquid path="assets/img/4.4.jpg" title="Brayton study - chart 2" class="img-fluid rounded z-depth-1" %}
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+{% include figure.liquid path="assets/img/4.5.jpg" title="Brayton study - diagram 2" class="img-fluid rounded z-depth-1" %}
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+{% include figure.liquid path="assets/img/4.6.jpg" title="Brayton study - chart 3" class="img-fluid rounded z-depth-1" %}
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+{% include figure.liquid path="assets/img/4.7.jpg" title="Brayton study - diagram 3" class="img-fluid rounded z-depth-1" %}
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+Brayton Cycle Performance Optimization Study
+Spring 2023 – Thermodynamic Modeling & Cycle Optimization
+For the two-person thermodynamics project, I completed an analytical study of a T55-GA-5512 gas turbine engine by modeling it as an idealized Brayton Cycle and assessed design modifications that would meet defined performance constraints. Applying engine data sourced from the manufacturer documentation, I constructed three complete cycle models: stock, maximum thermal efficiency, and maximum horsepower. The thermodynamic effects of each configuration were quantified using EES.
+This baseline model captured compressor and turbine behavior using assumed isentropic efficiencies of 0.85 and a compression ratio of 8:1, which provided reference values for thermal efficiency and specific net work. For the efficiency-optimized design, I further integrated a high-performance regenerator to reclaim exhaust heat and hence reduce external heat input for improved thermal efficiency at constant horsepower. In the case of the horsepower-optimized configuration, I then added a reheater and a second turbine stage, with adjustment of the intermediate pressure to maintain stock thermal efficiency while substantially increasing total power output.
+Across the three models, I developed T-s diagrams, quantified cycle work and heat interactions, and compared the thermodynamic tradeoffs inherent in each modification. The final proposal delivered practical, physically implementable solutions aligned with specific mission requirements—one emphasizing fuel efficiency and one emphasizing power augmentation. This project heightened my capabilities in cycle modeling, assumption justification, engineering communication, and the use of computational tools to drive design decisions.

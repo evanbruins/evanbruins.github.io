@@ -1,80 +1,23 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
-img:
+title: Accurate FEA of fixed Beam Testing
+description: George Fox 2024
+img: assets/img/6.1.jpg
 importance: 2
-category: ideas
+category: school
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+{% include figure.liquid path="assets/img/6.1.jpg" title="Fixed beam - test 1" class="img-fluid rounded z-depth-1" %}
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+{% include figure.liquid path="assets/img/6.2.jpg" title="Fixed beam - test 2" class="img-fluid rounded z-depth-1" %}
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+{% include figure.liquid path="assets/img/6.3.jpg" title="Fixed beam - mesh" class="img-fluid rounded z-depth-1" %}
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+{% include figure.liquid path="assets/img/6.4.jpg" title="Fixed beam - comparison" class="img-fluid rounded z-depth-1" %}
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+{% include figure.liquid path="assets/img/6.5.jpg" title="Fixed beam - deflection" class="img-fluid rounded z-depth-1" %}
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+{% include figure.liquid path="assets/img/6.6.jpg" title="Fixed beam - setup" class="img-fluid rounded z-depth-1" %}
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+I performed a structural verification study to accurately model fixed 3D-printed beams under load, using controlled laboratory experiments coupled with SolidWorks static simulations. The test setup I designed with my teammate tested deflection behavior across multiple beam geometries, including straight, L-shaped, and T-shaped variants, using a standard, unmodified beam as the control specimen. We experimentally found the elastic modulus of the control beam and brought that value into our simulation environment, allowing high-fidelity comparison between the analytical predictions and measured performance.
+Specific steps we took to validate the accuracy of the simulation include consistent boundary conditions, a mesh convergence study, and quality metrics including aspect ratio thresholds that ensure the robustness of the mesh. These results showed errors of less than 2% for the control beam, which confirmed that our experimentally derived modulus was accurate, while larger deviations in the geometric variations within the notched beams were due to internal cooling stresses and localized changes in stiffness. This study underlined the sensitivity of FDM-printed materials to geometry-dependent material behavior and proved the necessity of thorough model refinement during the correlation of physical testing and finite element analysis.
