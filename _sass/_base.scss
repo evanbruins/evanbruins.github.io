@@ -186,6 +186,21 @@ ul.task-list input[type="checkbox"] {
 
 //caption
 
+/* Tighten spacing for featured project descriptions */
+.featured-projects .card-body {
+  padding: 0.5rem;
+}
+
+.featured-projects .card-title {
+  margin-bottom: 0.25rem;
+  font-size: 1.5rem;
+}
+
+.featured-projects .card-text {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
 .caption {
   font-size: 0.875rem;
   margin-top: 0.75rem;
@@ -525,8 +540,8 @@ footer.fixed-bottom {
 
 footer.sticky-bottom {
   border-top: 1px solid var(--global-divider-color);
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px !important;
   font-size: 0.9rem;
 
   .container {

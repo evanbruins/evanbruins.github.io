@@ -28,12 +28,7 @@ latest_projects:
   scrollable: true 
   limit: 3
 ---
-
-<style>
-/* Remove extra bottom whitespace on the about page only */
-body { padding-bottom: 0 !important; }
-</style>
-
+ 
 Hi, I’m Evan Bruins! I am a senior Mechanical Engineering student at George Fox University, focused on creating optimized designs and connecting technology with the natural world. Outside of engineering, I spend my time backpacking, snowboarding, surfing, running, and making music with friends.
 
   
