@@ -7,17 +7,37 @@ importance: 2
 category: school
 ---
 
-{% include figure.liquid path="assets/img/6.1.jpg" title="Fixed beam - test 1" class="img-fluid rounded z-depth-1" %}
+<div class="row justify-content-sm-center">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/6.3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/6.2.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
-{% include figure.liquid path="assets/img/6.2.jpg" title="Fixed beam - test 2" class="img-fluid rounded z-depth-1" %}
+I conducted a structural study of fixed 3D printed beams under load, combining lab experiments with SolidWorks simulations to assess how geometry affects deflection and stress.
 
-{% include figure.liquid path="assets/img/6.3.jpg" title="Fixed beam - mesh" class="img-fluid rounded z-depth-1" %}
+<div class="row mt-5">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/6.5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
-{% include figure.liquid path="assets/img/6.4.jpg" title="Fixed beam - comparison" class="img-fluid rounded z-depth-1" %}
+Using a standard beam as a control, we measured its elastic modulus and incorporated it into simulations. Validation included consistent boundary conditions, mesh convergence, and quality metrics, yielding errors under 2% and confirming the modulus accuracy.
 
-{% include figure.liquid path="assets/img/6.5.jpg" title="Fixed beam - deflection" class="img-fluid rounded z-depth-1" %}
+<div class="row mt-5">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/6.4 copy.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
-{% include figure.liquid path="assets/img/6.6.jpg" title="Fixed beam - setup" class="img-fluid rounded z-depth-1" %}
+We also tested L-shaped, T-shaped, and other geometrically modified beams. Larger deviations arose from internal cooling stresses and localized stiffness changes, showing the sensitivity of FDM printed materials to geometry.
 
-I performed a structural verification study to accurately model fixed 3D-printed beams under load, using controlled laboratory experiments coupled with SolidWorks static simulations. The test setup I designed with my teammate tested deflection behavior across multiple beam geometries, including straight, L-shaped, and T-shaped variants, using a standard, unmodified beam as the control specimen. We experimentally found the elastic modulus of the control beam and brought that value into our simulation environment, allowing high-fidelity comparison between the analytical predictions and measured performance.
-Specific steps we took to validate the accuracy of the simulation include consistent boundary conditions, a mesh convergence study, and quality metrics including aspect ratio thresholds that ensure the robustness of the mesh. These results showed errors of less than 2% for the control beam, which confirmed that our experimentally derived modulus was accurate, while larger deviations in the geometric variations within the notched beams were due to internal cooling stresses and localized changes in stiffness. This study underlined the sensitivity of FDM-printed materials to geometry-dependent material behavior and proved the necessity of thorough model refinement during the correlation of physical testing and finite element analysis.
+<div class="row mt-5">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/6.6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+The study confirmed that accurate modeling of 3D printed beams requires careful correlation of physical testing and simulation. Among all variants, the straight variant beam performed best, showing the most consistent behavior and closest agreement between experimental and simulated results.
